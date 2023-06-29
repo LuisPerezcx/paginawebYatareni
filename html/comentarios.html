@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/validar.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="head-div"></div>
+        <div id="logodiv"><a href="index.html"><img id="logo" src="../media/logo.jpg" alt="logoyatareni"></a></div>
+        <nav>
+            <ul id="navegacion">
+                <li class="navbar"><a class="nav-a" href="index.html">Inicio</a></li>
+                <li class="navbar"><a class="nav-a" href="Historia.html">Historia</a></li>
+                <li class="navbar"><a class="nav-a" href="infraestructura.html">Infraestructura</a></li>
+                <li class="navbar"><a class="nav-a" href="mediofisico.html">Medio físico</a></li>
+                <li class="navbar"><a class="nav-a" href="economia.html">Economía</a></li>
+                <li class="navbar"><a class="nav-a" href="turismo.html">Turismo</a></li>
+                <li class="navbar"><a class="nav-a" href="galeria.html">Galería</a></li>
+                <li class="navbar"><a class="nav-a" href="comentarios.html">Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="txtCentro">Formulario de Comentarios y Sugerencias</h1>
+        <div id="comentariosform">
+            <form action="enviado.html" method="post" target="_self" onsubmit="return validarFormulario()">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <br><br>
+
+                <label for="sugerencia">Sugerencia:</label>
+                <textarea id="sugerencia" name="sugerencia" rows="4" cols="50" required></textarea>
+
+                <span id="error-message"></span>
+
+                <br><br>
+
+                <input type="submit" value="Enviar" >
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-div">
+            <div id="footer-div-1">
+
+                Palacio municipal
+            </div>
+            <div id="footer-div-2">
+                Francisco I. Madero 6-208, San Agustín Yatareni <br>
+                68290 San Agustín Yatareni, Oax.
+            </div> <br>
+            <div id="footer-div-3">
+                H. Ayuntamiento de San Agustín Yatareni, Oaxaca. <br> <br>
+                <a href="https://www.facebook.com/SanAgustinYatareniOficial" target="_blank">
+                    <img class="img-footer" src="../media/fb-logo.png" alt="logo-fb">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
